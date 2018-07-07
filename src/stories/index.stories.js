@@ -16,18 +16,17 @@ storiesOf('Welcome', module).add('to Storybook', () => ({
 storiesOf('Buttons', module)
   .add('Primary', () => ({
     components: { PrimaryButton },
-    template: '<taxjar-button class="button__primary" @click="action">Primary button</taxjar-button>',
+    template: '<PrimaryButton class="btn__primary" @click="action" />',
     methods: { action: action('clicked') },
   }))
   .add('Secondary', () => ({
     components: { PrimaryButton },
-    template: '<taxjar-button class="button__secondary" @click="action">Secondary nutton</taxjar-button>',
+    template: '<PrimaryButton class="btn__secondary" @click="action" />',
     methods: { action: action('clicked') },
   }))
-  .add('with some emoji', () => ({
+  .add('Table Action', () => ({
     components: { PrimaryButton },
-    template:
-      '<taxjar-button @click="action"><span role="img" aria-label="so cool">😀 😎 👍 💯</span></taxjar-button>',
+    template: '<PrimaryButton class="btn__secondary" @click="action" />',
     methods: { action: action('clicked') },
   }));
 

@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "taxjar-button",
+  name: "tj-button",
   data() {
     return {
       buttonText: "Button text"
@@ -14,12 +14,26 @@ export default {
 </script>
 
 <style lang='scss'>
+@import "../styles/variables";
+
 .btn {
-  border-radius: 3px;
-  height: 40px;
   font-size: 14px;
-  .btn__primary {
-    background-color: red;
-  }
+  font-weight: 600;
+  padding: 0 12px;
+  height: 40px;
+  min-width: 80px;
+  border-radius: 3px;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn__primary {
+  color: white;
+  background-color: $colorPurple;
+}
+.btn__secondary {
+  color: white;
+  background-color: $colorPurple;
 }
 </style>
