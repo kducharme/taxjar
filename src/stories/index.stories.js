@@ -4,32 +4,30 @@ import { storiesOf } from '@storybook/vue';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import MyButton from './MyButton.vue';
+import PrimaryButton from './Button.vue';
 import Welcome from './Welcome.vue';
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
-  components: { Welcome },
+  components: { Welcome, PrimaryButton },
   template: '<welcome :showApp="action" />',
   methods: { action: linkTo('Button') },
 }));
 
-storiesOf('Button', module)
-  .add('with text', () => ({
-    components: { MyButton },
-    template: '<my-button @click="action">Hello Button</my-button>',
+storiesOf('Buttons', module)
+  .add('Primary', () => ({
+    components: { PrimaryButton },
+    template: '<taxjar-button class="button__primary" @click="action">Primary button</taxjar-button>',
     methods: { action: action('clicked') },
   }))
-  .add('with JSX', () => ({
-    components: { MyButton },
-    render() {
-      return <my-button onClick={this.action}>With JSX</my-button>;
-    },
-    methods: { action: linkTo('clicked') },
+  .add('Secondary', () => ({
+    components: { PrimaryButton },
+    template: '<taxjar-button class="button__secondary" @click="action">Secondary nutton</taxjar-button>',
+    methods: { action: action('clicked') },
   }))
   .add('with some emoji', () => ({
-    components: { MyButton },
+    components: { PrimaryButton },
     template:
-      '<my-button @click="action"><span role="img" aria-label="so cool">😀 😎 👍 💯</span></my-button>',
+      '<taxjar-button @click="action"><span role="img" aria-label="so cool">😀 😎 👍 💯</span></taxjar-button>',
     methods: { action: action('clicked') },
   }));
 
