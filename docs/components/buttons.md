@@ -7,6 +7,8 @@ meta:
 # Buttons
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
+[[toc]]
+
 ### Global Classes
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -16,6 +18,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <button class='button'>Global button</button>
 ```
 ```scss
+// Dependencies
+@import "variables";
+
 .button {
   font-weight: $weightMedium;
   border-radius: $radius;
@@ -39,18 +44,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <button class='button button__primary'>Primary button</button>
 ```
 ```scss
+// Dependencies
+@import "variables";
+
 .button__primary {
-  font-weight: $weightMedium;
-  border-radius: $radius;
-  height: 40px;
-  padding: 0 12px;
-  color: white;
-  font-size: 14px;
-  border: none;
+  background-color: $colorGreen;
+  border: 1px solid $colorGreenDark;
 }
 .button__primary:hover {
-  background-color: $colorPurpleDark;
-  cursor: pointer;
+  background-color: $colorGreenDark;
 }
 ```
 
@@ -72,11 +74,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 }
 
 .button__primary {
-  background-color: #614BB9;
+  background-color: #3FAE2A;
+  border: 1px solid #399C47;
 }
 
 .button__primary:hover {
-  background-color: #422E8F;
+  background-color: #399C47;
 }
 
 

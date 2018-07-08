@@ -1,13 +1,10 @@
 module.exports = {
     title: '',
     description: '',
+    dest: '/overview/intro',
     themeConfig: {
       logo: 'https://pbs.twimg.com/profile_images/910603053396484096/thf39ASW_400x400.jpg',
       searchMaxSuggestions: 10,
-      nav: [
-        { text: 'Introduction', link: '/' },
-        { text: 'Components', link: '/guide/' }
-      ],
       sidebar: [
         {
           title: 'Components',
@@ -24,6 +21,7 @@ module.exports = {
           title: 'SCSS',
           collapsable: false,
           children: [
+            '/scss/practices',
             '/scss/elements',
             '/scss/mixins',
             '/scss/variables'
