@@ -18,6 +18,13 @@ module.exports = {
           ]
         },
         {
+          title: 'Interactions',
+          collapsable: false,
+          children: [
+            './interactions/loading'
+          ]
+        },
+        {
           title: 'SCSS',
           collapsable: false,
           children: [

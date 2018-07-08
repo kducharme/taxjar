@@ -5,18 +5,21 @@ meta:
 ---
 
 # Buttons
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Throught TaxJar, buttons play an important role in helping guide users in the way they interact with and interpret the importance of content displayed on the screen.
 
 [[toc]]
 
-### Global Classes
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+### Global button classes
 
-<button class='button'>Global button</button>
+---
+
+All buttons inherit a global class that defines general styles, which can be overridden by more specific classes depending on the use case.
 
 ```html
-<button class='button'>Global button</button>
+<button class='taxjar__button'>Global button</button>
 ```
+
 ```scss
 // Dependencies
 @import "variables";
@@ -28,60 +31,71 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   padding: 0 12px;
   color: white;
   font-size: 14px;
-  border: none;
+  border: 1px solid;
+  border-bottom: 2px solid;
 }
 .button:hover {
   cursor: pointer;
 }
 ```
 
-### Primary Buttons
+### Basic buttons
+
+---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-<button class='button button__primary'>Primary button</button>
+<button class='taxjar__button button__basic'>Primary button</button>
+
+</br>
 
 ```html
-<button class='button button__primary'>Primary button</button>
+<button class='taxjar__button button__basic'>Primary button</button>
 ```
+
 ```scss
 // Dependencies
 @import "variables";
 
-.button__primary {
-  background-color: $colorGreen;
-  border: 1px solid $colorGreenDark;
+.button__basic {
+  color: $colorGrayBlack;
+  background-color: $colorGrayBackground;
+  border-color: $colorGrayBorder;
 }
-.button__primary:hover {
-  background-color: $colorGreenDark;
+.button__basic:hover {
+  background-color: $colorGrayHover;
 }
 ```
 
-
-
 <style>
-.button {
-  background-color: gray;
+.taxjar__button {
+  background-color: #FAFAFA;
   height: 40px;
-  padding: 0 12px;
+  padding: 4px 16px;
   border-radius: 3px;
   color: white;
   font-size: 14px;
   font-weight: 600;
-  border: none;
+  border: 1px solid;
+  /* border-bottom: 2px solid; */
+  transition: all .2s ease-in-out;
 }
-.button:hover {
+
+.taxjar__button:hover {
   cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
-.button__primary {
-  background-color: #3FAE2A;
-  border: 1px solid #399C47;
+.button__basic {
+  color: #399C47;
+  background-color: #EBF6E9;
+  border-color: #399C47;
+
 }
 
-.button__primary:hover {
-  background-color: #399C47;
-}
+.button__basic:hover {
+  background-color: #CFEBCA;
 
+}
 
 </style>
-

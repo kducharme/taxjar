@@ -26,6 +26,7 @@ $colorFontMedium: #8B8593;
 // Primary colors
 $colorGreen: #3FAE2A;
 $colorGreenDark: #399C47;
+$colorGreenMedium: #CFEBCA;
 $colorGreenLight: #EBF6E9;
 
 // Accent colors
@@ -49,8 +50,10 @@ $colorYellowDark: #D0B13E;
 // Structural colors
 $colorGrayBackground: #FAFAFA;
 $colorGrayBorder: #E2E2E2;
+$colorGrayHover: #EFEFEF;
 
 // Gray Colors
+$colorGrayBlack: #303136;
 $colorGrayDark: #55565A;
 $colorGrayMedium: #7A7B7D;
 $colorGrayRegular: #B7B7B8;
