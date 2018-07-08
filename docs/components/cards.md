@@ -1,10 +1,10 @@
 ---
-title: Buttons
+title: Cards
 meta:
-  - name: buttons
+  - name: cards
 ---
 
-# Buttons
+# Cards
 
 <button class='btn'>asdfasdfdsf</button>
 

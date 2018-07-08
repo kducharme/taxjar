@@ -2,9 +2,11 @@
 title: Variables
 ---
 
-# CSS Variables
+# SCSS Variables
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-</style>
+**_variables.scss**
+
 
 ```scss
 // Fonts
@@ -54,6 +56,8 @@ $colorGrayMedium: #7A7B7D;
 $colorGrayRegular: #B7B7B8;
 $colorGrayLight: #D6D6D6;
 
+//Components
+$radius: 3px;
 
 ```
 
