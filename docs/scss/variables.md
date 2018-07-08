@@ -26,7 +26,6 @@ $colorFontMedium: #8B8593;
 // Primary colors
 $colorGreen: #3FAE2A;
 $colorGreenDark: #399C47;
-$colorGreenMedium: #CFEBCA;
 $colorGreenLight: #EBF6E9;
 
 // Accent colors
