@@ -8,11 +8,11 @@ meta:
 
 Throught TaxJar, buttons play an important role in helping guide users in the way they interact with and interpret the importance of content displayed on the screen.
 
+</br>
+
 [[toc]]
 
 ### Global button classes
-
----
 
 </br>
 
@@ -43,8 +43,6 @@ All buttons inherit a global class that defines general styles, which can be ove
 ```
 
 ### Neutral button
-
----
 
 <br>
 
@@ -82,8 +80,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Primary buttons
 
----
-
 </br>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -98,19 +94,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <button class='taxjar__button button__primary'>Click me</button>
 ```
 
-```scss
-// Dependencies
-@import "variables";
+### Outline buttons
 
-.button__basic {
-  color: $colorGrayBlack;
-  background-color: $colorGrayBackground;
-  border-color: $colorGrayBorder;
-}
-.button__basic:hover {
-  background-color: $colorGrayHover;
-}
+</br>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+</br>
+
+<button class='taxjar__button button__outline'>Click me</button>
+
+</br>
+
+```html
+<button class='taxjar__button button__outline'>Click me</button>
 ```
+
 
 <style>
 
@@ -130,7 +129,6 @@ button:active, button:focus {
 /* General button styles */
 
 .taxjar__button {
-  background-color: #FAFAFA;
   height: 36px;
   padding: 0 20px;
   border-radius: 3px;
@@ -154,7 +152,7 @@ button:active, button:focus {
 .button__basic {
   color: #303136;
   background-color: #FAFAFA;
-  border-color: #E2E2E2;
+  border-color: #D6D6D6;
 }
 
 .button__basic:hover { background-color: #EFEFEF; }
@@ -169,7 +167,6 @@ button:active, button:focus {
   color: #fff;
   background-color: #3FAE2A;
   border: 1px solid #399C47;
-  border-bottom: 2px solid #399C47;
   transition: all .2s ease-in-out;
 }
 
@@ -180,7 +177,24 @@ button:active, button:focus {
 .button__primary:active {
   background-color: #2F8A3C;
   border: 1px solid #2F8A3C;
-  border-bottom: 2px solid #2F8A3C;
+}
+
+/* Primary button styles */
+
+.button__outline {
+  color: #67597A;
+  background-color: transparent;
+  border: 1px solid #67597A;
+  transition: all .2s ease-in-out;
+}
+
+.button__outline:hover {
+  background-color: #ECEBEF;
+}
+
+.button__outline:active {
+  background-color: #DBD7DF;
+  border: 1px solid #67597A;
 }
 
 </style>

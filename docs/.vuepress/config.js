@@ -2,6 +2,9 @@ module.exports = {
     title: '',
     description: '',
     dest: '/overview/intro',
+    head: [
+      ['link', { rel: 'icon', href: './public/taxjar.jpg' }]
+    ],
     themeConfig: {
       logo: 'https://pbs.twimg.com/profile_images/910603053396484096/thf39ASW_400x400.jpg',
       searchMaxSuggestions: 10,
