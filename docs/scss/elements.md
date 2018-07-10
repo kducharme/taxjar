@@ -6,18 +6,18 @@ meta:
 
 # Elements
 
-<button class='btn'>asdfasdfdsf</button>
+</br>
 
-<style>
-.btn {
-  background-color: red;
-}
+All inputs inherit a global class that defines general styles, which can be overridden by more specific classes depending on the use case.
+
 
 </style>
 
 ```css
-.btn {
-  background-color: red;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 ```

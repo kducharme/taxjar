@@ -42,7 +42,7 @@ All buttons inherit a global class that defines general styles, which can be ove
 }
 ```
 
-### Neutral button
+### Basic button
 
 <br>
 
