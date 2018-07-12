@@ -35,6 +35,10 @@ textarea {
   padding: 16px 16px 0 16px;
 }
 
+::placeholder {
+  color: $colorGrayRegular;
+}
+
 .taxjar__input {
   border: 1px solid $colorGrayRegular;
   border-radius: $radius;
@@ -127,7 +131,7 @@ textarea {
   resize: none;
 }
 
-input::placeholder {
+::placeholder {
   color: #B7B7B8;
 }
 
